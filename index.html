@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中萌集团·China Moe</title>
+    <style>
+        /* 全局样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 图片容器 */
+        .image-container {
+            text-align: center;
+        }
+
+        /* 图片样式 */
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            .image-container img {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="index.jpg" alt="示例图片">
+    </div>
+</body>
+</html>
