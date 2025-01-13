@@ -10,34 +10,36 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            overflow: hidden; 
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
+            background-color: #fff; 
         }
 
-        .image-container {
-            text-align: center;
+
+        .fullscreen-image {
+            position: relative;
+            width: 100vw; 
+            height: 100vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .image-container img {
+
+        .fullscreen-image img {
             max-width: 100%;
+            max-height: 100%;
+            width: auto;
             height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        @media (max-width: 600px) {
-            .image-container img {
-                max-width: 90%;
-            }
+            object-fit: contain; 
         }
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="index.png">
+    <div class="fullscreen-image">
+        <img src="index.png" >
     </div>
 </body>
 </html>
